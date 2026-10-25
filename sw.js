@@ -1,4 +1,4 @@
-const CACHE = 'one-picture-v1';
+const CACHE = 'one-picture-v2-icon-fit';
 const ASSETS = ['./', './index.html', './app.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
