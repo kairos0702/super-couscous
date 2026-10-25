@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "一张图",
-  "short_name": "一张图",
+  "name": "支付宝",
+  "short_name": "支付宝",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
