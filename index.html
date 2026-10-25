@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f3ef">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>一张图</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#f4f3ef;font-family:system-ui,sans-serif;color:#292a28}body{overscroll-behavior:none}#photo{position:fixed;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;touch-action:manipulation}#photo[hidden],#welcome[hidden]{display:none}#welcome{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center}button{font:inherit;border:1px solid #d3d2cb;background:transparent;color:inherit;padding:15px 30px;border-radius:999px;cursor:pointer}button:focus-visible{outline:2px solid #383b32;outline-offset:5px}h1{font-size:30px;font-weight:500;letter-spacing:.16em;margin:0 0 36px}p{font-size:12px;line-height:1.9;color:#77796e;margin:24px 0 0}#status{min-height:24px;color:#a24238}input{display:none}
+</style>
+</head>
+<body>
+<img id="photo" alt="选中的图片" hidden draggable="false">
+<main id="welcome"><h1>一张图</h1><button id="choose" type="button">从相册选一张</button><p>铺满屏幕，只留图片。<br>图片保存在这台设备，不会上传。<br>双击图片可以更换。</p><p id="status" role="status"></p></main>
+<input id="file" type="file" accept="image/*">
+<script src="./app.js" defer></script>
+</body>
+</html>
